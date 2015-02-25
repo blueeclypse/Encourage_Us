@@ -14,7 +14,7 @@ public class Verse {
         this.book = book;
         this.chapter = chapter;
         this.verseNum = verseNum;
-        //this is a test
+        //this is a test2
     }
 
     //returns the verse
