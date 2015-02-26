@@ -14,7 +14,6 @@ public class Verse {
         this.book = book;
         this.chapter = chapter;
         this.verseNum = verseNum;
-        //this is a test2
     }
 
     //returns the verse
@@ -26,4 +25,10 @@ public class Verse {
     public String getReference(){
         return book+"";
     }
+
+    private String getBookName(int book){
+        //will implement binary search tree with books of the Bible to allow for quick searching and scalability in the saerch method
+        return "";
+    }
+
 }
