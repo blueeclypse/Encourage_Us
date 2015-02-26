@@ -5,12 +5,14 @@ package Backend;
  */
 public class Verse {
     private String verse = ""; //stores the verse
-    private int book; //book number(chronological order)
-    private int chapter; //chapter number
-    private int verseNum; //verse number
+    private String bookName = ""; //name of the book
+    private int book = 1; //book number(chronological order starting at 1)
+    private int chapter = 1; //chapter number
+    private int verseNum = 1; //verse number
 
-    public Verse(String verse, int book, int chapter, int verseNum){
+    public Verse(String verse, String bookName, int book, int chapter, int verseNum){
         this.verse = verse;
+        this.bookName = bookName;
         this.book = book;
         this.chapter = chapter;
         this.verseNum = verseNum;
@@ -23,7 +25,7 @@ public class Verse {
 
     //unfinished
     public String getReference(){
-        return book+"";
+        return bookName;
     }
 
     private String getBookName(int book){
